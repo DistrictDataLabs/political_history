@@ -40,7 +40,7 @@ db = os.path.join(cur_dir, 'input_text.sqlite')
 
 def classify(document):
     label = {0: 'Democrat', 1: 'Republican'}
-    y = clf.predict(document)
+    y = clf.predict(document)[0]
     proba = np.max(clf.predict_proba(document))
     return label[y], proba
 
