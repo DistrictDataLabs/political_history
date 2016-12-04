@@ -1,0 +1,25 @@
+pipeline_name,text parsing,feature selection,classifier,accuracy,precision,recall,auc
+test1,unigrams,SelectPercentile,Na‹ve-Bayes,0.604095563,0.558441558,0.902097902,0.611048951
+test2,unigrams,PCA,Na‹ve-Bayes,0.62116041,0.591690544,0.722027972,0.623513986
+test3,unigrams,SelectPercentile,Na‹ve-Bayes,0.695392491,0.681895093,0.704545455,0.695606061
+test4,unigrams,SelectPercentile + PCA,Na‹ve-Bayes,0.698805461,0.67862969,0.727272727,0.699469697
+test5,unigrams,PCA,AdaBoost,0.602389078,0.589225589,0.611888112,0.602610723
+test6,unigrams,SelectPercentile,AdaBoost,0.656143345,0.606289308,0.842657343,0.660495338
+test7,unigrams,SelectPercentile + PCA,AdaBoost,0.662969283,0.635114504,0.727272727,0.664469697
+test8,unigrams,PCA,SVM,0.692832765,0.686619718,0.681818182,0.692575758
+test9,unigrams,SelectPercentile,SVM,0.704778157,0.692176871,0.711538462,0.704935897
+test10,unigrams,SelectPercentile + PCA,SVM,0.684300341,0.672945205,0.687062937,0.684364802
+test11,unigrams + frequency cut-offs,SelectPercentile,Na‹ve-Bayes,0.489761092,0.488715278,0.984265734,0.501299534
+test12,unigrams + frequency cut-offs,SelectPercentile,SVM,0.511945392,0,0,0.5
+test13,unigrams + frequency cut-offs,SelectPercentile + PCA,SVM,0.501706485,0.494252874,0.902097902,0.511048951
+test14,"uni-, bi-, trigrams",SelectPercentile,Na‹ve-Bayes,0.700511945,0.69352014,0.692307692,0.700320513
+test15,"uni-, bi-, trigrams",SelectPercentile,SVM,0.767918089,0.776752768,0.736013986,0.76717366
+test16,"uni-, bi-, trigrams",SelectPercentile + PCA,SVM,0.756825939,0.784158416,0.692307692,0.755320513
+test17,"uni-, bi-, trigrams + frequency cut-offs",SelectPercentile,SVM,0.548634812,0.539305302,0.515734266,0.547867133
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
