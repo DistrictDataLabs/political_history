@@ -33,7 +33,27 @@ text_train, text_test, labels_train, labels_test = cross_validation.train_test_s
 os.chdir(SAVE_PATH)
 
 from sklearn.pipeline import Pipeline
-from cleaning_text import *
+
+def clean_text(text):
+    """
+    Removes punctuation, converts all characters to lowercase, stems
+
+    Args:
+        a single string of text
+
+    Returns:
+        processed text string
+
+    """
+    tokens = RegexpTokenizer(r'\w+')
+    stemmer = SnowballStemmer('english')
+
+    token = tokens.tokenize(text)
+    filtered_words = [word for word in token]
+    stems = [stemmer.stem(t) for t in filtered_words]
+    stemmed_text = " ".join(stems)
+    stemmed_text_list = stemmed_text.split()
+    return stemmed_text_list
 
 #export test 15
 model = Pipeline([
