@@ -74,7 +74,7 @@ def results():
                                 content=usertext,
                                 prediction=y,
                                 probability=round(proba*100, 2))
-    return render_template('results.html', form=form)
+    return render_template('inputform.html', form=form)
 
 @app.route('/thanks', methods=['POST'])
 def feedback():
@@ -90,4 +90,6 @@ def feedback():
     return render_template('thanks.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.debug = True
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
