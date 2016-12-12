@@ -53,7 +53,7 @@
 
 					{% from "_formhelpers.html" import render_field %}
 
-				<form method=post action="/inputform">
+				<form method=post action="/results">
 				  <dl>
 				    {{ render_field(form.inputtext, cols='30', rows='10') }}
 				  </dl>
@@ -67,28 +67,6 @@
         </div>
         <!-- /.container -->
     </section>
-
-<h3>Your political speech:</h3>
-<div>{{ content }}</div>
-
-<h3>Prediction:</h3>
-<div>This political speech is <strong>{{ prediction }}</strong>
-  (probability: {{ probability }}%).</div>
-
-<div id='button'>
-  <form action="/thanks" method="post">
-    <input type=submit value='Correct' name='feedback_button'>
-    <input type=submit value='Incorrect' name='feedback_button'>
-    <input type=hidden value='{{ prediction }}' name='prediction'>
-    <input type=hidden value='{{ content }}' name='usertext'>
-  </form>
-</div>
-
-<div id='button'>
-  <form action="/">
-    <input type=submit value='Submit another speech'>
-  </form>
-</div>
 
 
     <!-- Footer -->
