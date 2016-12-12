@@ -13,5 +13,5 @@ pycrypto==2.6.1
 wsgiref==0.1.2
 pickleshare==0.6
 numpy==1.11.2
-scikit-learn
-scipy
+scikit-learn==0.17.1
+scipy==0.16.0
