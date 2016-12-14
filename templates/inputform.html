@@ -10,6 +10,7 @@
     <meta name="author" content="">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/css/full-width-pics.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -40,9 +41,38 @@
         </div>
     </nav>
     <h1 class="section-heading">Classification Engine</h1>
-    <header class="image-bg-fluid-height">
+<!--     <header class="image-bg-fluid-height">
         <img class="img-responsive img-center" src="/static/america.jpg" alt="">
-    </header>
+    </header> -->
+    <div>
+      <canvas id='resCanvas' width="2000" height="600" style="width: 100%" class="fade-in">
+                  <ul id="demoTags">
+      <li><a href="#" data-weight="20">dominance</a></li>
+      <li><a href="#" data-weight="13">borders</a></li>
+      <li><a href="#" data-weight="43">military</a></li>
+      <li><a href="#" data-weight="20">control</a></li>
+      <li><a href="#" data-weight="23">failed</a></li>
+      <li><a href="#" data-weight="23">stolen</a></li>
+      <li><a href="#" data-weight="20">fallen</a></li>
+      <li><a href="#" data-weight="13">punish</a></li>
+      <li><a href="#" data-weight="43">brutal</a></li>
+      <li><a href="#" data-weight="20">local</a></li>
+      <li><a href="#" data-weight="23">federal</a></li>
+      <li><a href="#" data-weight="23">disaster</a></li>
+      <li><a href="#" data-weight="20">obey</a></li>
+      <li><a href="#" data-weight="13">respect</a></li>
+      <li><a href="#" data-weight="43">pride</a></li>
+      <li><a href="#" data-weight="20">ideals</a></li>
+      <li><a href="#" data-weight="23">strongly</a></li>
+      <li><a href="#" data-weight="23">torture</a></li>
+    </ul>
+      </canvas>
+
+
+    </div>
+
+
+
     <section>
         <div class="container">
             <div class="row">
@@ -79,7 +109,9 @@
         </div>
     </footer>
     <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/wordflow.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
+    <script src='http://www.goat1000.com/tagcanvas.min.js'></script>
 
 </body>
 

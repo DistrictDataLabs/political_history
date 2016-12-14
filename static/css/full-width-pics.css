@@ -8,6 +8,14 @@ body {
     margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+}
+#resCanvas{
+  text-align:center;
+  margin:auto;
+  background: url('america.jpg');
+}
+
+
 .image-bg-fluid-height,
 .image-bg-fixed-height {
     text-align: center;
@@ -52,3 +60,4 @@ footer {
         font-size: 2em;
     }
 }
+
