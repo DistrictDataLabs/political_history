@@ -64,6 +64,14 @@ def index():
     form = InputForm(request.form)
     return render_template('inputform.html', form=form)
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/methodology')
+def methodology():
+    return render_template('methods.html')
+
 @app.route('/results', methods=['POST'])
 def results():
     form = InputForm(request.form)

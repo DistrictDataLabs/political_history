@@ -39,9 +39,6 @@
             </div>
         </div>
     </nav>
-<!--     <header class="image-bg-fluid-height">
-        <img class="img-responsive img-center" src="/static/america.jpg" alt="">
-    </header> -->
     <div style="margin-top: 6em;">
   <div id="vote">
     <i id="donkey" class="gi gi-donkey gi-5x gi-inverse"></i>
@@ -56,30 +53,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                  <h1 >Classification Engine</h1>
+                  <h1 >About</h1>
                   <p class="lead section-lead">Shibboleth is a deployed natural language classifier that determines the American political party leanings of your text. Just the two major parties for now!</p>
-                  <h2>Input text to be classified:</h2>
+                  <h2>Our people</h2>
+                  <div style="margin-bottom: 2em;">
+                    <p style="float: left;"><img src="/static/joanna.jpg" height="200px" width="200px" border="1px" style='margin-right: 10px'></p>
+                    <p><strong>Jo Anna Capp</strong> received a PhD in biochemistry/biophysics from Duke University. At first reluctantly forced into statistical programming by her thesis adviser, she quickly came to love it. She's now a data nerd/stay-at-home mom who loves to test the capabilities of her laptop by performing calculations locally that should really be pushed to a cluster.  Current projects include creating a character map of all the star wars movies using natural language processing, and exploring census data to understand the what's happening in the United States. Jo Anna does statistical programming in R, python, and Spark, and is actively looking for data science opportunities that take her away from the clutches of a sometimes angry mini-dictator (her toddler).</p>
+                </div>
+                <div style="clear: left;">
+                    <p style="float: left;"><img src="/static/kevin.jpg" height="200" width="200" border="1px" style='margin-right: 10px'></p>
+                    <p><strong>Kevin O'Gallagher</strong> sas worked since 1998 for the Treasury Inspector General for Tax Admin (TIGTA) in the Strategic Data Services Division as a senior IT specialist. He has assisted in the design, build and operation of their SAS Data Warehouse providing me a background in Data Management, Data Warehousing, and Big Data.
 
-					{% from "_formhelpers.html" import render_field %}
-
-<!--       <div class="form-group">
-        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-      </div>
- -->
-
-				<form method=post action="/results">
-				  <dl>
-				    {{ render_field(form.inputtext, cols='90', rows='7') }}
-				  </dl>
-				  <div>
-				    <input type=submit value='Submit speech' name='submit_btn'>
-				  </div>
-				</form>
+                    TIGTA initiated a Data Analytics group two years ago, tasked with identifying fraud in tax refunds, procurement and identity theft. He is currently seeking a position as a data scientist because he finds the work uniquely challenging allowing him to utilize his previous backgrounds in science, computer programming, and data analysis.</p>
+                </div>
+                <div style="clear: left;">
+                    <p style="float: left;"><img src="/static/will.jpg" height="200" width="200" border="1px" style='margin-right: 10px'></p>
+                    <p><strong>Will Sankey</strong> is a data scientist at Xometry and a facult member at District Data Labs. He has been mostly along for the ride on this project :)</p>
+                </div>
                 </div>
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
     </section>
 
     <footer>
